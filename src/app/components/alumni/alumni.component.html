@@ -1,0 +1,254 @@
+<div class="home-heading p-4 ">
+    <div class="dark-overlay">
+        <div class="row">
+            <div class="col">
+                <div class="container pt-3">
+                    <a>
+                         <h3>Alumni</h3> 
+                        <ol class="breadcrumb text-centre">
+                            <li class="breadcrumb-item"><a routerLink='/'>Home</a></li>
+                            <li class="breadcrumb-item active"> Alumni </li>
+                        </ol>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class=" text-center py-3">
+                You're One of a Kind. So Are We.
+            </h2>
+            <span class="sepration-line"></span>
+            <div class="py-3"></div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="parasUl">
+                        <li>
+                            Dear Alumnus,
+                        </li>
+                        <div class="py-2"></div>
+                        <li>
+                            Greetings from Paras Vidya Vihar Institution!
+                        </li>
+                        <li>
+                            We are in the process of strengthening the Paras Vidya Vihar Alumni Association which is
+                            possible through
+                            your continued association with us.
+                        </li>
+                        <div class="py-2"></div>
+                        <li>
+                            Kindly become the member of Paras Vidya Vihar Alumni Association. We are sure that you will
+                            certainly
+                            participate in all initiatives of Alumni Association. Anticipating a positive and an
+                            enthusiastic response from you.
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="py-3"></div>
+
+            <alert></alert>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Material form register -->
+                    <div class="card">
+
+                        <h5 class="card-header info-color white-text text-center">
+                            <strong>
+                                Alumni Students Registration
+                            </strong>
+                        </h5>
+
+                        <!--Card content-->
+
+
+
+                        <div class="card-body px-lg-3">
+
+                            <!-- Form -->
+                            <form class="text-center cusForm" (ngSubmit)="onSubmit()" autocomplete="off"
+                                #alumniForm="ngForm" novalidate>
+
+                                <div class="form-row cusForm">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- First name -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="fname" class="form-control" name="fname"
+                                                [(ngModel)]="alumniForm.fname" #fname="ngModel" required>
+                                            <label for="fname">First name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Last name -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="lname" class="form-control" name="lname"
+                                                [(ngModel)]="alumniForm.lname" #lname="ngModel" required>
+                                            <label for="lname">Last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Class -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="class" class="form-control" name="class"
+                                                [(ngModel)]="alumniForm.class" #class="ngModel" required>
+                                            <label for="class">Class</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Year of passing -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="passingYearClass" class="form-control"
+                                                name="passingYearClass" [(ngModel)]="alumniForm.passingYearClass"
+                                                #passingYearClass="ngModel" required>
+                                            <label for="passingYearClass">Year of passing</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Class -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="graduation" class="form-control">
+                                            <label for="graduation">Graduation (Branch)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Year of passing -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="passingYearGraduation" class="form-control">
+                                            <label for="passingYearGraduation">Year of passing</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Class -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="pg" class="form-control">
+                                            <label for="pg"> Post Graduation (Branch)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Year of passing -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="passingYearPg" class="form-control">
+                                            <label for="passingYearPg">Year of passing</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Class -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="qualification" class="form-control">
+                                            <label for="qualification"> Other Qualification </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Year of passing -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="organization" class="form-control">
+                                            <label for="organization">Current Organization</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Class -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="landline" class="form-control">
+                                            <label for="landline"> LandLine Number </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <!-- Year of passing -->
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="mobile" class="form-control">
+                                            <label for="mobile"> Mobile Number </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- E-mail -->
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="md-form mt-0">
+                                            <input type="email" id="email" class="form-control">
+                                            <label for="email">E-mail</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Prsent Postal Address -->
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="presentAddress" class="form-control">
+                                            <label for="presentAddress">Present Postal Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Permanent Postal Address -->
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="md-form mt-0">
+                                            <input type="text" id="permanentAddress" class="form-control">
+                                            <label for="permanentAddress">Permanent Postal Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-2">
+                                    <div class="col-md-6">
+
+                                        <div>
+                                            <re-captcha siteKey="6LfHN6oUAAAAAJK-ZwzfZhF1MK7owms7lFMVDE6W"></re-captcha>
+                                            <!-- <div class="g-recaptcha" data-sitekey="6LfHN6oUAAAAAJK-ZwzfZhF1MK7owms7lFMVDE6W"></div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <input type="submit" value="Submit" class="btn btn-primary">
+                                            <input type="button" value="Clear" class="btn"
+                                                (click)="alumniForm.reset();">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <!-- Form -->
+
+                        </div>
+
+                    </div>
+                    <!-- Material form register -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="py-3"></div>

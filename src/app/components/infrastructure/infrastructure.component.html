@@ -1,0 +1,41 @@
+<div class="home-heading p-4 ">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container pt-3">
+          <a>
+             <h3>Infrastructure</h3> 
+            <ol class="breadcrumb text-centre">
+              <li class="breadcrumb-item"><a routerLink='/'>Home</a></li>
+              <li class="breadcrumb-item active"> Infrastructure </li>
+            </ol>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-4">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class=" text-center py-3">
+        World class learning Infrastructure
+      </h2>
+      <span class="sepration-line"></span>
+      <div class="py-3"></div>
+
+      <span class="text-center" style="display:block">
+        <span *ngFor="let image of _album; let i=index">
+          <img [src]="image.thumb" (click)="open(i)" width="30%" height="30%" class="img-thumbnail cusInline" />
+      </span>
+      </span>
+
+      
+
+
+    </div>
+  </div>
+</div>
+
+<div class="py-3"></div>

@@ -1,0 +1,27 @@
+@import "../../../assets/styles/common.scss";
+
+.breadcrumb{
+    background: transparent !important;
+}
+
+.breadcrumb-item active{
+    color: #2d66a0;
+}
+
+h2 {
+    font-family: 'Assistant', sans-serif;
+    color: #68aada;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1.1;
+ }
+
+ .cusInline{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+
+    &:hover {
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+}

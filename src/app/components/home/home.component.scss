@@ -1,0 +1,33 @@
+@import "../../../assets/styles/common.scss";
+
+.light-border {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.white-panel {
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.academic-text {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;  
+  font-weight: 300;
+  //  color:#021b41; 
+  color: #021b41;
+}
+
+h6{
+  font-family: "Open Sans", sans-serif;  
+  font-weight: 600;
+  //  color:#021b41; 
+  color: #021b41;
+}
+
+.featurette-divider{
+  color: #2B3232 !important;
+}
+
+
+

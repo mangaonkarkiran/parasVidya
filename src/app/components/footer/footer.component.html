@@ -1,0 +1,196 @@
+<div class="footer-wrapper page-footer font-small">
+  <div class="container">
+     <div class="footer-ribon">
+      <span class="get-in-touch"> Paras Vidya Vihar</span>
+    </div>
+    <div class="row pb-2">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 eve">
+        <span class="py-3">Quick Links
+          <div  class="quickLink">
+            <span class="sepration-line"></span>
+          </div>
+
+        </span>
+        <div class="">
+            <div class="py-1">
+                <i class="fa fa-star-o"></i> &nbsp; <a routerLink='academics/admissions'> Admission  </a>
+              </div>
+              <div>
+                  <i class="fa fa-star-o"></i> &nbsp; <a routerLink='/contact-us'> Contact Us  </a>
+                </div>
+            <div class="py-1">
+                <i class="fa fa-star-o"></i> &nbsp; <a routerLink='/student-document-verification'> Students Document Verification  </a>
+              </div>
+          <div>
+            <i class="fa fa-star-o"></i> &nbsp; <a href ="/assets/docs/grievance-redressal.pdf" target="_blank" > Grievance Redressal  </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center cusMargin">
+        <span class="py-3">Quick Contact
+          <div class="quick-contact ">
+            <span class="sepration-line"></span>
+          </div>
+        </span>
+        <div class="py-3" class="contact-info">
+          <div class="py-1">
+            <i class="fa fa-address-card-o"></i> &nbsp; Tili Ward, Sagar (MP) - 470002
+          </div>
+          <div class="py-1">
+            <i class="fa fa-phone"></i> &nbsp; 07582- 237677, 260521, 298521, +91 - 8989237677
+          </div>
+          <!-- <div class="py-1">
+              <i class="fa fa-mobile"></i> &nbsp; +91 - 8989237677
+            </div> -->
+          <div class="py-1">
+            <i class="fa fa-envelope-o"></i> &nbsp; info@parasvidyavihar.org
+          </div>
+          <div class="py-1">
+            <i class="fa fa-globe"></i> &nbsp; <a href="http://parasvidyavihar.org/" target="_blank">
+              www.parasvidyavihar.org</a>
+          </div>
+          <!-- <div class="py-1">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp; <a target="_blank"
+              href='/assets/docs/grievance-redressal.pdf'>Grievance Redressal</a>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 eve">
+        <span class="py-3">Social Links
+          <div>
+            <span class="sepration-line"></span>
+          </div>
+        </span>
+        <div>
+            <ul class="socialLinks">
+                <li >
+                  <a routerLink='/'>
+                    <img src="../../../assets/images/twitter.svg" class="social-link">
+                  </a>
+                </li>
+                <li >
+                  <a href="https://www.youtube.com/channel/UC_-GBuCbnUPJAkpaKzl6OiA/videos" target="_blank">
+                    <img src="../../../assets/images/youtube.svg" class="social-link">
+                  </a>
+                </li>
+                <li >
+                  <a href="https://www.facebook.com/parasvidyavihar" target="_blank">
+                    <img src="../../../assets/images/facebook.svg" class="social-link">
+                  </a>
+                </li>
+                <li >
+                  <a routerLink='/'>
+                    <img src="../../../assets/images/google-plus.svg" class="social-link">
+                  </a>
+                </li>
+              </ul>
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="disclaimer">
+  <div class="container">
+    <div class="row py-1">
+      <div class="col-lg-12 text-center ">
+        <ul>
+          <li>
+            Copyright © 2019 Paras Vidya Vihar All Rights Reserved.
+          </li>
+          <li>
+            <a href="https://bitmnemonix.com/" target="_blank">Powered By Bitmnemonix</a>
+            |
+            <a routerLink='/privacy'>Privacy Policy</a> | <a routerLink='/disclaimer'>Disclaimer</a> | <a
+              routerLink='/contact-us'> Contact us </a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- <div class="col-lg-8">
+        Disclaimer . Privacy Policy . Site Map Powered by SAP
+      </div> -->
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="modal fade" id="applyModal">
+  <div class="modal-dialog cascading-modal" role="document">
+
+    <div class="modal-content">
+
+      <div class="modal-header primary-color white-text">
+        <h4 class="title">
+          <i class="fa fa-pencil"></i> Contact us </h4>
+        <button type="button" class="close waves-effect waves-light" (click)="closeModal()" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <form (ngSubmit)=onSubmit() novalidate name="contactUs" #contactUsForm="ngForm" >
+
+          <div class=" form-group md-form form-sm">
+
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fas fa-user prefix"></i>
+                <input type="text" class="form-control form-control-sm" id="name" placeholder="First Name" name="name"
+                  required [(ngModel)]="name" [pattern]="namePattern" >
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-sm" id="lname" placeholder="Last Name" name="lname"
+                  required>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="form-group md-form form-sm">
+            <i class="fa fa-envelope prefix prefix"></i>
+            <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp"
+              name="email" [(ngModel)]="emailModel"  #email=ngModel [pattern]="emailPattern" required (focusout)="notFocused=true">
+            <label for="email">Your email</label>
+            <div *ngIf="email.errors && (email.dirty || email.touched) && notFocused" class="alert alert-danger">
+                <div [hidden]="!email.errors.required">
+                  Email is required!
+                </div>
+                <div [hidden]="!email.errors.pattern">
+                  Please enter a valid email address!
+                </div>
+              </div>
+          </div>
+
+          <div class=" form-group md-form form-sm">
+            <i class="fas fa-mobile prefix"></i>
+            <input type="text" class="form-control form-control-sm" id="phone" name="phone" required
+              [pattern]="phonePattern">
+            <label for="phone">Phone Number</label>
+          </div>
+
+          <div class=" form-group md-form form-sm">
+            <i class="fa fa-pencil prefix"></i>
+            <textarea type="text" id="message" class="md-textarea form-control" name="message" required></textarea>
+            <label for="message">Your message</label>
+
+          </div>
+
+          <div class="text-center mt-4 mb-2">
+            <button type="submit" class="btn btn-primary">Send
+              <i class="fa fa-send ml-2"></i>
+            </button>
+            <input type="button" value="Clear" class="btn btn-primary" (click)="reset()">
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div [ngClass]="isscrollShow?'scrollToTop fa fa-chevron-right':'scrollToHide'" (click)="scrollToTop()"></div>

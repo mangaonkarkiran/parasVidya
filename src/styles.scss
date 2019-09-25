@@ -1,0 +1,383 @@
+/* You can add global styles to this file, and also import other style files */
+/* Extra Small Devices, Phones */
+
+.navbar .navbar-toggler{
+    color:#fff;
+    padding: 0.25rem 0.30rem;
+    font-size: 16px;
+}
+
+.featureEvents .card{
+      margin: 0 auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+.texteEllipsis
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  color:#fff !important;
+}
+
+.dark-overlay{
+    text-align: center;
+    padding: 30px 0;
+    h3{
+        text-align: center;
+    }
+}
+
+.breadcrumb{
+  background: transparent !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  text-align: center;
+ .breadcrumb-item
+  {
+    display: inline;
+  }
+}
+
+body{
+  font-size: 15px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+    
+ul.parasUl {
+    list-style-type: none;
+    padding: 0;
+    li {
+		margin: 0;
+		padding: 0;
+		font-family: "Open Sans", sans-serif;  
+		font-size: 15px;
+		font-weight: 300;
+		color:#021b41; 
+	}
+ }
+    
+ .ulSquare{
+    list-style-type:square !important;
+    padding: 0 20px !important;
+  }
+
+.paraMenu{
+    position: static !important;
+}
+
+@media (min-width:0px) 
+{
+   .logo{
+      display: block;
+      text-align: center;
+      padding: 10px 0 10px 10px;
+      width: 100%;
+   }
+   .customeSchoolNameDesign{
+      font-size: 35px;
+      padding: 0px 0 10px 0;
+      margin: 0 auto; 
+      font-weight: bold;  
+      text-align: center;
+      line-height: 40px;
+   }
+
+   .tagline{
+     font-size: 16px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 17px;
+   }
+
+   .sliderWrapper{
+       height: auto;
+   }
+
+  .navbar-custom .navbar-nav .nav-link {
+    padding-left: 0.4rem !important;
+    padding-right: 10px !important;
+  }
+
+  .eve{
+        text-align: center
+   }
+
+    .ShowDesktop{
+      display: none;
+  }
+    .ShowMobile{
+        display: inline
+    }
+
+    .navbar .dropdown-menu{
+        position: static;
+    }
+
+    .socialLinks{
+      margin: 0 auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width:480px) 
+{
+  .logo{
+      display: block;
+      text-align: center;
+      padding: 10px 0 10px 10px;
+      width: 100%;
+   }
+   .customeSchoolNameDesign{
+      font-size: 35px;
+      padding: 0px 0 10px 0;
+      margin: 0 auto; 
+      font-weight: bold;  
+      text-align: center;
+      line-height: 40px;
+   }
+
+   .tagline{
+     font-size: 16px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 17px;
+   }
+
+
+   .navbar-custom .navbar-nav .nav-link {
+      padding-left: 0.4rem !important;
+      padding-right: 10px !important;
+  }
+
+
+    .eve{
+        text-align: center
+    }
+
+    .menuParas{
+        margin: 0 auto;
+    }
+
+     .ShowDesktop{
+      display: none;
+  }
+    .ShowMobile{
+        display: inline
+    }
+
+     .navbar .dropdown-menu{
+        position: static;
+    }
+
+    .socialLinks{
+      margin: 0 auto;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width:768px) 
+{
+   .logo{
+      display: block;
+      text-align: center;
+      padding: 10px 0 10px 10px;
+      width: 100%;
+   }
+   .customeSchoolNameDesign{
+      font-size: 40px;
+      padding: 0px 0 10px 0;
+      margin: 0 auto; 
+      font-weight: bold;  
+      text-align: center;
+      line-height: 45px;
+   }
+
+   .tagline{
+     font-size: 16px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 17px;
+   }
+    .navbar-custom .navbar-nav .nav-link {
+       padding-left: 0.4rem !important;
+       padding-right: 10px !important;
+  }
+
+  .eve{
+        text-align: left
+    }
+
+     .ShowDesktop{
+      display: none;
+  }
+    .ShowMobile{
+        display: inline
+    }
+
+     .navbar .dropdown-menu{
+        position: static;
+    }
+
+    .socialLinks{
+      margin: 0 auto;
+    }
+}
+
+@media (min-width:992px) 
+{
+    .logo{
+      display: block;
+      text-align: inherit;
+      padding: 10px 0 10px 10px;
+      width: auto;
+   }
+   .customeSchoolNameDesign{
+      font-size: 50px;
+      padding: 10px 0 0 0;
+      margin: 0 auto;
+      font-weight: bold;
+      text-align: center;
+      line-height: 55px;
+   }
+
+   .tagline{
+     font-size: 18px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 20px;
+   }
+    .navbar-custom .navbar-nav .nav-link {
+       padding-left: 0.4rem !important;
+       padding-right: 10px !important;
+  }
+
+  .eve{
+        text-align: left
+    }
+
+   .ShowDesktop{
+      display: inline;
+  }
+    .ShowMobile{
+        display: none
+    }
+
+     .navbar .dropdown-menu{
+        position: absolute;
+    }
+
+    .socialLinks{
+      margin: 0;
+    }
+}
+
+
+@media (min-width:1170px) 
+{
+	.customeSchoolNameDesign{
+      font-size: 55px;
+      padding: 10px 0 0 0;
+      margin: 0 auto;
+      font-weight: bold;
+      text-align: center;
+      line-height: 60px;
+   }
+
+   .tagline{
+     font-size: 18px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 20px;
+   }
+    .navbar-custom .navbar-nav .nav-link {
+       padding-left: 0.4rem !important;
+    padding-right: 25px;
+  }
+
+  .eve{
+        text-align: left
+    }
+
+    .ShowDesktop{
+      display: inline;
+  }
+    .ShowMobile{
+        display: none
+    }
+
+     .navbar .dropdown-menu{
+        position: absolute;
+    }
+
+    .socialLinks{
+      margin: 0;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width:1366px) 
+{
+  .customeSchoolNameDesign{
+      font-size: 55px;
+      padding: 10px 0 0 0;
+      margin: 0 auto;
+      font-weight: bold;
+      text-align: center;
+      line-height: 60px;
+   }
+
+   .tagline{
+     font-size: 18px;
+     margin-bottom: 5px;
+     display: block;
+     font-weight: normal;
+     line-height: 20px;
+   }
+    
+ .navbar-custom .navbar-nav .nav-link {
+       padding-left: 0.4rem !important;
+    padding-right: 25px;
+  }
+ 
+  .eve{
+        text-align: left
+    }
+
+    .ShowDesktop{
+      display: inline;
+  }
+    .ShowMobile{
+        display: none
+    }
+
+     .navbar .dropdown-menu{
+        position: absolute;
+    }
+
+    .socialLinks{
+      margin: 0;
+    }
+
+}

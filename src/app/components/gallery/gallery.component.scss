@@ -1,0 +1,42 @@
+@import "../../../assets/styles/common.scss";
+
+.academic-structure {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  //  color:#021b41; 
+  color: #68aada;
+  font-size: 24px;
+}
+
+.sepration-line {
+  margin: 0;
+  width: 120px;
+  display: inline-block;
+  padding-top: 3px;
+
+  &::before {
+    background-color: #2d66a0;
+    left: 0;
+  }
+
+  &::after {
+    background-color: black;
+  }
+}
+
+.row {
+  margin: 15px;
+}
+
+.image-box {
+  overflow: hidden;
+
+  .img-thumbnail {
+    width: 25%;
+    height: 25%;
+ }
+ 
+
+}
+
+

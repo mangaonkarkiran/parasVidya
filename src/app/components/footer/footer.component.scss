@@ -1,0 +1,162 @@
+@import "../../../assets/styles/common.scss";
+
+.footer-wrapper {
+  background: #2b3232;
+  color: #fff;
+  position: relative;
+  padding-top: 50px;
+  border-top: 4px solid #38598b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.temp-border {
+  border: 1px solid #38598b;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.quickLink ul {
+  list-style-type: none;
+  // columns: 2;
+  // -webkit-columns: 2;
+  // -moz-columns: 2;
+  // padding-right: 40px;
+}
+
+// .social ul {
+//   list-style-type: none;
+//   columns: 2;
+//   -webkit-columns: 2;
+//   -moz-columns: 2;
+// }
+
+ul,
+li {
+  padding: 0;
+}
+
+.socialLinks{
+  width: 165px;
+}
+.sepration-line {
+  margin: 0;
+  width: 120px;
+  display: inline-block;
+  padding-top: 3px;
+
+  &::before {
+    background-color: #2d66a0;
+    left: 0;
+  }
+
+  &::after {
+    background-color: white;
+  }
+}
+
+.quick-contact {
+  .sepration-line {
+    &::before {
+      background-color: #2d66a0;
+      left: 40%;
+    }
+
+    &::after {
+      background-color: white;
+    }
+  }
+}
+
+.disclaimer {
+  background-color: #38598b;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.scrollToTop {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  border: 1px solid #fff;
+  color: #fff;
+  z-index: 999;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  padding: 10px;
+
+  &:hover {
+    border: 1px dotted #fff;
+  }
+}
+
+.scrollToHide {
+  display: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #97eeff;
+}
+
+.footer-ribon {
+  position: absolute;
+  margin: -70px 0 0 0;
+  padding: 10px 20px 6px 20px;
+  background: #93b3ce;
+
+  &::before {
+    border-right: 10px solid #1d2b36;
+    border-right-color: #005580;
+    border-top: 16px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+  }
+}
+
+.get-in-touch {
+  color: #fff;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+}
+
+.contact-info {
+  color: #fff;
+  //font-weight: 700;
+}
+
+.social-link {
+  width: 40px;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.social-link:hover {
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+

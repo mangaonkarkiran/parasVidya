@@ -1,0 +1,32 @@
+@import "../../../assets/styles/common.scss";
+
+
+ul {
+    list-style-type: none;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;  
+    font-size: 15px;
+    font-weight: 300;
+     color:#021b41; 
+  }
+div{
+    font-family: "Open Sans", sans-serif;  
+    font-size: 15px;
+    font-weight: 300;
+     color:#021b41; 
+}
+
+.engMargin{
+    margin-top: 50px;
+}
+
+b{
+    font-weight: 700;
+  }
+
+  

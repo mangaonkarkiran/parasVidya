@@ -1,0 +1,192 @@
+<div class="home-heading p-4 ">
+    <div class="dark-overlay">
+        <div class="row">
+            <div class="col">
+                <div class="container pt-3">
+                    <a>
+                         <h3>Contact Us</h3> 
+                        <ol class="breadcrumb text-centre">
+                            <li class="breadcrumb-item"><a routerLink='/'>Home</a></li>
+                            <li class="breadcrumb-item active"> Contact Us </li>
+                        </ol>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class=" text-center py-3">
+                Get in touch
+            </h2>
+            <span class="sepration-line"></span>
+            <div class="py-3"></div>
+
+            <div class="row blue-box">
+                <div class="col-lg-12">
+
+                    <div class="row py-4">
+
+
+                        <!-- Start contact icon column -->
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                        <p>
+                                            Location: Paras Vidya Vihar, <br>
+                                            Tili Ward, 470002, Sagar, MP
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+
+                            <div>
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="fa fa-mobile"></i>
+                                        <p>
+
+                                            Call: 07582- 237677,260521,298521 <br>
+                                            <span>+91 - 8989237677</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- Start contact icon column -->
+                        
+
+                        <!-- Start contact icon column -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+
+                            <div>
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <p>
+                                            Email: <a href="mailto:info@parasvidyavihar.org">info@parasvidyavihar.org </a><br>
+                                            Web: http://www.parasvidyavihar.org
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+    <alert></alert>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Material form register -->
+            <div class="card">
+
+                <h5 class="card-header info-color white-text text-center">
+                    <strong>
+                        Contact Us
+                    </strong>
+                </h5>
+
+                <!--Card content-->
+                <div class="card-body px-lg-3 pt-0">
+
+                    <!-- Form -->
+                    <form class="text-center cusForm"  #contactForm="ngForm" (ngSubmit)="onSubmit()" novalidate autocomplete="off">
+
+                        <div class="form-row cusForm">
+                            
+                            <div class="col-lg-6">
+                                <!-- First name -->
+                                <div class="form-group md-form form-sm" style="margin-bottom: 0">
+                                    <!-- <i class="fa fa-user prefix CusForm" aria-hidden="true"></i> -->
+                                    <input type="text" id="fname" class="form-control" name="fname"  [(ngModel)]="contactus.fname" #fname = "ngModel" required>
+                                    <label for="fname">First name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Last name -->
+                                <div class="form-group md-form form-sm">
+                                    <input type="text" id="lname" class="form-control" name="lname"  [(ngModel)]="contactus.lname" #lname = "ngModel" required>
+                                    <label for="lname">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form mt-0">
+                                    <input type="email" id="email" class="form-control" name="email"  [(ngModel)]="contactus.email" #email = "ngModel" required>
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Prsent Postal Address -->
+
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form mt-0">
+                                    <input type="text" id="subject" class="form-control" name="subject"  [(ngModel)]="contactus.subject" #subject = "ngModel" >
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Permanent Postal Address -->
+
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form mt-0">
+                                    <input type="text" id="message" class="form-control"  name="message"  [(ngModel)]="contactus.message" #message = "ngModel" >
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-6">
+
+                                <div>
+                                    <re-captcha (resolved)="resolved($event)" siteKey="6LfHN6oUAAAAAJK-ZwzfZhF1MK7owms7lFMVDE6W"></re-captcha>
+                                    <!-- <div class="g-recaptcha" data-sitekey="6LfHN6oUAAAAAJK-ZwzfZhF1MK7owms7lFMVDE6W"></div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <input type="submit" value="Submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">
+                                    <input type="button" value="Clear" class="btn" (click)="contactForm.reset();">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <!-- Form -->
+
+
+                </div>
+
+
+            </div>
+            <div class="py-3"></div>
+
+        </div>
+    </div>
+</div>

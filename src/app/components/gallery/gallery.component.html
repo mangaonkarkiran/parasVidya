@@ -1,0 +1,26 @@
+<div class="container">
+  <div class=" py-3">
+    <span>
+    <h2>Gallery  <span class="sepration-line"></span></h2>  
+      
+    </span>
+
+
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-lg-6">
+        <img src="../../assets/images/21.jpg" alt="..." class="img-thumbnail">
+    </div>
+  </div> -->
+
+
+  <span *ngFor="let image of _album; let i=index" class="image-box">
+    <img [src]="image.thumb" (click)="open(i)" class="img-thumbnail " />
+  </span>
+  <div class="py-2"></div>
+  <button type="button" class="btn btn-primary" routerLink='/gallery'>View All </button>
+
+</div>
+
+<div class="py-4"></div>
