@@ -133,6 +133,14 @@ ul.parasUl {
     .socialLinks{
       margin: 0 auto;
     }
+
+    .clubImg{
+        img{
+            float: none;
+            display: block;
+            margin: 0 auto
+        }
+    }
 }
 
 /* Small Devices, Tablets */
@@ -190,6 +198,13 @@ ul.parasUl {
     .socialLinks{
       margin: 0 auto;
     }
+    .clubImg{
+        img{
+            float: none;
+            display: block;
+            margin: 0 auto
+        }
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -240,6 +255,14 @@ ul.parasUl {
     .socialLinks{
       margin: 0 auto;
     }
+
+    .clubImg{
+        img{
+            float: none;
+            display: block;
+            margin: 0 auto
+        }
+    }
 }
 
 @media (min-width:992px) 
@@ -289,6 +312,14 @@ ul.parasUl {
     .socialLinks{
       margin: 0;
     }
+
+    .clubImg{
+        img{
+            float: right;
+            display: block;
+            margin: 0 auto
+        }
+    }
 }
 
 
@@ -332,6 +363,14 @@ ul.parasUl {
 
     .socialLinks{
       margin: 0;
+    }
+
+    .clubImg{
+        img{
+            float: right;
+            display: block;
+            margin: 0 auto
+        }
     }
 
 }
@@ -378,6 +417,14 @@ ul.parasUl {
 
     .socialLinks{
       margin: 0;
+    }
+
+    .clubImg{
+        img{
+            float: right;
+            display: block;
+            margin: 0 auto
+        }
     }
 
 }
